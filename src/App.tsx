@@ -1,11 +1,13 @@
-import Weather from "./components/weather/weather";
+  import Crypto from "./components/crypto/crypto";
+  import Weather from "./components/weather/weather";
 
-function App() {
-  return (
-    <div>
-      <Weather />
-    </div>
-  );
-}
+  function App() {
+    return (
+      <>
+        <Weather />
+        <Crypto />
+      </>
+    );
+  }
 
-export default App;
+  export default App;

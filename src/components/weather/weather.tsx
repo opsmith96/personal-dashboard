@@ -14,7 +14,7 @@ const Weather: React.FC = () => {
 
   return (
     <Box maxWidth={370} m={5}>
-      <Paper elevation={3}>
+      <Paper elevation={5} className={classes.root}>
         <Box p={2}>
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={3}>
@@ -29,7 +29,7 @@ const Weather: React.FC = () => {
 
             <Grid item xs={3}>
               <ArrowDownward
-                style={{ transform: "rotate(" + windDirection + "deg" + ")" }}
+                style={{ transform: "rotate(" + windDirection + "deg)" }}
                 className={classes.icon}
               />
             </Grid>

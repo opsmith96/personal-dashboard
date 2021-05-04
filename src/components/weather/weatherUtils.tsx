@@ -5,6 +5,10 @@ export const useStyle = makeStyles({
   icon: {
     fontSize: 48,
   },
+  root: {
+    color: "#ffffff",
+    backgroundColor: "#424242",
+  },
 });
 
 export const useWeather = () => {
@@ -29,13 +33,13 @@ export const useWeather = () => {
               air_temperature,
               wind_speed,
               cloud_area_fraction,
-              wind_from_direction
+              wind_from_direction,
             } = t.data.instant.details;
 
             setTemprature(air_temperature);
             setWindSpeed(wind_speed);
             setCloudPercentage(cloud_area_fraction);
-            setWindDirection(wind_from_direction)
+            setWindDirection(wind_from_direction);
           }
         })
       );
